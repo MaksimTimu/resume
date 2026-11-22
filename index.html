@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Максим Тимуш — Frontend-разработчик</title>
+  <meta name="description" content="Резюме Максима Тимуша: Junior Frontend-разработчик. HTML, CSS, JavaScript, React, PHP, MySQL. Проекты и контакты.">
+  <meta property="og:title" content="Максим Тимуш — Frontend-разработчик">
+  <meta property="og:description" content="Адаптивные сайты, анимации, интерфейсы. Открыт к предложениям.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23111'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='900' font-size='30' fill='%23fafaf8'>MT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top">MT<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#path">Путь</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <button class="btn btn--ghost btn--sm" data-print>PDF ↓</button>
+  </header>
+
+  <main id="top">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="badge"><i></i> Открыт к предложениям: стажировка / junior</div>
+      <h1 class="hero__name">
+        <span class="split">Максим</span>
+        <span class="split split--outline">Тимуш</span>
+      </h1>
+      <p class="hero__role">
+        <span class="mono">&gt;</span> <span class="typed" data-words='["Frontend-разработчик","верстаю адаптивно 360–2560px","оживляю интерфейсы анимациями","делаю сайты под ключ"]'></span><span class="caret"></span>
+      </p>
+      <p class="hero__lead">
+        Студент колледжа Финансового университета. Делаю быстрые и аккуратные интерфейсы
+        с рабочим бэкендом под капотом. В работе активно использую нейросети, поэтому решаю задачи быстрее.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--accent magnetic" href="#projects">Смотреть проекты</a>
+        <a class="btn btn--ghost magnetic" href="#contact">Связаться</a>
+      </div>
+
+      <ul class="stats">
+        <li><b data-count="3">0</b><span>проекта в портфолио</span></li>
+        <li><b data-count="12">0</b><span>технологий в стеке</span></li>
+        <li><b data-count="5" data-suffix="+">0</b><span>нейросетей в ежедневной работе</span></li>
+        <li><b data-count="360" data-suffix="px">0</b><span>минимальная ширина для адаптива</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== ОБО МНЕ ===== -->
+    <section id="about" class="section">
+      <h2 class="section__title reveal"><span class="mono">01</span> Обо мне</h2>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>Мне 18, живу в Москве. Учусь на программиста и параллельно делаю реальные проекты: интернет-магазины на PHP и MySQL, а также анимационные ролики на React (Remotion) для своего YouTube-канала.</p>
+          <p>Умею работать с современными нейросетями. С AI-ассистентами пишу и ревьюю код, нейросети генерируют мне изображения и озвучку. Знаю, как правильно ставить им задачи и как проверять результат.</p>
+          <p>Мне важно, чтобы сайт выглядел аккуратно и быстро открывался на любом экране. Для этого я проверяю его в Lighthouse и валидаторе W3C, сжимаю картинки и подгружаю их лениво.</p>
+          <p>Ищу команду, где смогу расти во фронтенде: React, TypeScript, работа с дизайнерами и код-ревью.</p>
+        </div>
+        <div class="terminal reveal spot">
+          <div class="terminal__bar"><i></i><i></i><i></i><span>maksim.json</span></div>
+          <pre class="terminal__body" data-code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== НАВЫКИ ===== -->
+    <section id="skills" class="section">
+      <h2 class="section__title reveal"><span class="mono">02</span> Навыки</h2>
+      <div class="bento">
+        <article class="card spot reveal bento__big">
+          <h3>Вёрстка и интерфейсы</h3>
+          <p>Семантичный HTML, адаптив от 360 до 2560px, CSS-анимации, Flexbox/Grid, доступность (ARIA, контраст), prefers-reduced-motion.</p>
+          <div class="bars">
+            <div class="bar" style="--v:85%"><span>HTML / CSS</span></div>
+            <div class="bar" style="--v:65%"><span>JavaScript</span></div>
+            <div class="bar" style="--v:35%"><span>React / TypeScript</span></div>
+          </div>
+        </article>
+        <article class="card spot reveal">
+          <h3>Бэкенд</h3>
+          <p>PHP (PDO), MySQL, REST-API для фронта, сессии, CSRF-защита, миграции БД, отправка почты по SMTP.</p>
+        </article>
+        <article class="card spot reveal">
+          <h3>Скорость и SEO</h3>
+          <p>WebP, lazy loading, CLS = 0, sitemap, robots, JSON-LD, Яндекс Метрика с целями.</p>
+        </article>
+        <article class="card spot reveal">
+          <h3>Нейросети</h3>
+          <p>Пишу код и разбираюсь в ошибках с AI-ассистентами, нейросети генерируют мне картинки и озвучку. Умею писать промпты и проверять результат.</p>
+          <div class="tags tags--accent"><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>Cursor</span></div>
+        </article>
+        <article class="card spot reveal">
+          <h3>Инструменты</h3>
+          <div class="tags"><span>Git / GitHub</span><span>VS Code</span><span>Figma</span><span>DevTools</span><span>phpMyAdmin</span><span>Vercel</span></div>
+        </article>
+        <article class="card spot reveal bento__wide">
+          <h3>Сейчас изучаю</h3>
+          <div class="tags tags--accent"><span>React</span><span>TypeScript</span><span>Next.js</span><span>Tailwind</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ПРОЕКТЫ ===== -->
+    <section id="projects" class="section">
+      <h2 class="section__title reveal"><span class="mono">03</span> Проекты</h2>
+      <div class="projects">
+
+        <article class="project spot tilt reveal">
+          <div class="project__num">01</div>
+          <h3>GameZone</h3>
+          <p class="project__desc">Интернет-магазин игр: каталог с категориями и подсказками в поиске, корзина и заказы, отзывы с рейтингом, акции дня, недели и месяца, e-mail-рассылки, админ-панель.</p>
+          <ul class="project__facts">
+            <li>Своё API для динамических блоков</li>
+            <li>Устранил блокировки PHP-сессий</li>
+          </ul>
+          <div class="tags"><span>PHP</span><span>MySQL</span><span>AJAX</span><span>SMTP</span></div>
+          <a class="link" href="http://z92628x0.beget.tech/sites/portfolio/GameZone/" target="_blank" rel="noopener">Открыть сайт ↗</a>
+        </article>
+
+        <article class="project spot tilt reveal">
+          <div class="project__num">02</div>
+          <h3>Магазин аксессуаров</h3>
+          <p class="project__desc">Интернет-магазин аксессуаров ручной работы: каталог, корзина, личный кабинет, доставка и админ-панель. Адаптивная вёрстка с мобильным меню.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Адаптив</span></div>
+          <a class="link" href="#" data-akss target="_blank" rel="noopener">Открыть сайт ↗</a>
+        </article>
+
+        <article class="project spot tilt reveal">
+          <div class="project__num">03</div>
+          <h3>Анимация кодом</h3>
+          <p class="project__desc">Мой YouTube-канал с короткими анимационными роликами. Сцены, тайминги и субтитры собраны кодом на React (Remotion), а иллюстрации и озвучку делают нейросети. Весь процесс от сценария до рендера автоматизирован.</p>
+          <div class="tags"><span>React</span><span>Remotion</span><span>TypeScript</span><span>AI</span></div>
+        </article>
+
+        <article class="project spot tilt reveal">
+          <div class="project__num">04</div>
+          <h3>Это резюме</h3>
+          <p class="project__desc">Без фреймворков: чистые HTML, CSS и JS. Анимации только на transform и opacity, чтобы не нагружать браузер. Печатная машинка, счётчики, появление блоков при прокрутке и отдельная версия для печати и PDF.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Vanilla JS</span><span>IntersectionObserver</span></div>
+          <a class="link" href="https://github.com/MaksimTimu" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== ПУТЬ ===== -->
+    <section id="path" class="section">
+      <h2 class="section__title reveal"><span class="mono">04</span> Опыт и образование</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <time>2026 — сейчас</time>
+          <h3>Фриланс и учебные проекты</h3>
+          <p>Делаю сайты на PHP + MySQL с хостингом на Beget: от вёрстки и базы данных до SEO и аналитики.</p>
+        </li>
+        <li class="reveal">
+          <time>2026 — сейчас</time>
+          <h3>Свой YouTube-канал</h3>
+          <p>Пишу сценарии, собираю анимацию на React (Remotion), иллюстрации и озвучку делаю с помощью нейросетей.</p>
+        </li>
+        <li class="reveal">
+          <time>Сейчас</time>
+          <h3>Колледж информатики и программирования</h3>
+          <p>Финансовый университет при Правительстве Российской Федерации.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section id="contact" class="section contact">
+      <h2 class="contact__title reveal">Давайте <span class="grad">работать</span> вместе</h2>
+      <p class="reveal">Отвечаю в течение дня. Готов к тестовому заданию.</p>
+      <div class="contact__links reveal">
+        <a class="btn btn--accent btn--lg" href="https://t.me/USERNAME" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn--ghost btn--lg" href="https://vk.com/USERNAME" target="_blank" rel="noopener">ВКонтакте</a>
+        <a class="btn btn--ghost btn--lg" href="mailto:EMAIL@example.com">E-mail</a>
+        <a class="btn btn--ghost btn--lg magnetic" href="https://github.com/MaksimTimu" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <button class="copy reveal" data-copy="EMAIL@example.com">EMAIL@example.com <span>скопировать</span></button>
+    </section>
+  </main>
+
+  <footer class="footer">© <span data-year></span> Максим Тимуш · сделано вручную, без шаблонов</footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
