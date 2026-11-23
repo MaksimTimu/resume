@@ -112,6 +112,10 @@ $$('[data-copy]').forEach(b => b.addEventListener('click', async () => {
   try { await navigator.clipboard.writeText(b.dataset.copy); toast('Почта скопирована ✓'); }
   catch { toast(b.dataset.copy); }
 }));
+// E-mail: открываем письмо в Gmail и заодно копируем адрес
+$$('[data-mail]').forEach(a => a.addEventListener('click', () => {
+  navigator.clipboard?.writeText(a.dataset.mail).then(() => toast('Почта скопирована ✓'), () => {});
+}));
 $('[data-year]').textContent = new Date().getFullYear();
 
 // Пасхалка для тех, кто открыл консоль

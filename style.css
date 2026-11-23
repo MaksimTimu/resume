@@ -53,6 +53,7 @@ a { color: inherit; text-decoration: none; }
 .btn--accent { background: var(--text); color: var(--bg); }
 .btn--accent:hover { background: var(--accent); border-color: var(--accent); }
 .btn--ghost:hover { background: var(--text); color: var(--bg); }
+.contact__links .btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* ---------- Hero ---------- */
 main { width: min(1000px, calc(100% - 32px)); margin: 0 auto; }
@@ -136,7 +137,10 @@ main { width: min(1000px, calc(100% - 32px)); margin: 0 auto; }
 /* Таймлайн */
 .timeline { list-style: none; border-top: 1px solid var(--line); }
 .timeline li { display: grid; grid-template-columns: 200px 1fr; gap: 24px; padding: 26px 0; border-bottom: 1px solid var(--line); }
-.timeline time { font: 13px/1.9 var(--f-mono); color: var(--muted); grid-row: span 2; }
+.timeline .tl-tag { align-self: start; justify-self: start; display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 6px; border: 1px solid var(--line); border-radius: 999px; font: 13px var(--f-mono); color: var(--muted); grid-row: span 2; transition: border-color .25s, color .25s; }
+.timeline .tl-tag i { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: var(--text); color: var(--bg); font-style: normal; font-size: 11px; transition: background .25s; }
+.timeline li:hover .tl-tag { border-color: var(--accent); color: var(--accent); }
+.timeline li:hover .tl-tag i { background: var(--accent); }
 .timeline h3 { font-size: 19px; font-weight: 800; letter-spacing: -.02em; }
 .timeline p { color: var(--muted); max-width: 620px; }
 
@@ -161,7 +165,7 @@ main { width: min(1000px, calc(100% - 32px)); margin: 0 auto; }
   .about, .projects, .bento { grid-template-columns: 1fr; }
   .bento__big { grid-row: auto; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; }
-  .timeline time { grid-row: auto; }
+  .timeline .tl-tag { grid-row: auto; margin-bottom: 6px; }
 }
 @media (max-width: 480px) {
   body { font-size: 16px; }
